@@ -31,6 +31,7 @@ public class SimpleLinkedListTest {
         System.out.println("Add Function");
         numbers.add(25,1); 
         System.out.println(numbers.toString());
+        numbers.add(0,5);
         numbers.add(1,25); 
         numbers.add(4,50);
         System.out.println(numbers.toString());
@@ -59,7 +60,7 @@ public class SimpleLinkedListTest {
         //remove by index
         System.out.println("Remove by Index Function - Bonus");
         System.out.println(numbers.toString());
-        System.out.println(numbers.removeByIndex(1));
+        System.out.println(numbers.removeByIndex(0));
         System.out.println(numbers.removeByIndex(5));
         System.out.println(numbers.toString());
     }   

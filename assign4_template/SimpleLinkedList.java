@@ -40,6 +40,11 @@ public class SimpleLinkedList {
         else if (index == this.size+1){
             add(item);
         }
+        else if (index == 0){
+            Node temp = new Node(item);
+            temp.next = head;
+            head = temp;
+        }
         else{
             Node current = this.head;
             for(int i = 0; i < index-1; i++){
@@ -107,6 +112,9 @@ public class SimpleLinkedList {
     public int removeByIndex(int index) {
         Node current = head;
         Node previous = null;
+        if (index == 0){
+            head = head.next;
+        }
         if (index < size){
             for(int i = 0; i < index; i++){
                 previous = current;
